@@ -1,0 +1,9 @@
+<section class="speakers">
+  <h2 class="speakers__title">Спикеры конференции</h2>
+  <div class="speakers__grid">
+    <app-speaker-card
+      *ngFor="let speaker of speakers; trackBy: trackById"
+      [speaker]="speaker"
+    ></app-speaker-card>
+  </div>
+</section>

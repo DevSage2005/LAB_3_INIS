@@ -1,59 +1,46 @@
-# ItConferenceAngular
+Инструкции по запуску
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.2.
+Требования:
+Node.js версии 18 или выше
+npm версии 9 или выше
+Angular CLI версии 20 (устанавливается глобально)
 
-## Development server
+Установка Angular CLI:
 
-To start a local development server, run:
+npm install -g @angular/cli
+Проверка установки:
 
-```bash
+ng version
+Клонирование репозитория:
+
+git clone <ссылка-на-репозиторий>
+cd it-conference-angular
+
+Установка зависимостей:
+npm install
+
+Запуск проекта в режиме разработки:
 ng serve
-```
+или
+npm start
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+После запуска приложение доступно по адресу:
+http://localhost:4200/
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+Сборка продакшен-версии:
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Собранные файлы появятся в папке dist/.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
+Запуск unit-тестов:
 ng test
-```
 
-## Running end-to-end tests
+Остановка dev-сервера:
+Ctrl + C
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Примечания
+При первом запуске ng serve может занять 5–10 секунд — идёт компиляция.
+Для автоматического открытия браузера используй ng serve --open.
+Если порт 4200 занят, Angular предложит другой порт — смотри вывод в терминале.
+Для смены порта вручную: ng serve --port 4300.
+При изменении файлов dev-сервер перекомпилирует проект автоматически.
